@@ -1,0 +1,13 @@
+{
+    "parallel": 5,
+    "launch_in_dev": ["Opera", "Safari", "IE", "Firefox", "Chrome"],
+    "launch_in_ci": ["Opera", "Safari", "IE", "Firefox", "Chrome"],
+    "framework": "mocha",
+    "src_files": [
+        "node_modules/chai/chai.js",
+        "node_modules/sinon-chai/lib/sinon-chai.js",
+        "node_modules/sinon/pkg/sinon.js",
+        "namespace.js",
+        "test.js"
+    ]
+}

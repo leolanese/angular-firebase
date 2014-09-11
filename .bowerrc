@@ -1,0 +1,24 @@
+{
+    "name": "Test",
+    "version": "1",
+    "homepage": "",
+    "authors": [
+        "Leo Lanese "
+    ],
+    "description": "This is a test",
+    "main": "index.html",
+    "keywords": [
+        "lab"
+    ],
+    "license": "DWYFW",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components"
+    ],
+    "dependencies": {
+        "angular-route": "~1.2.16",
+        "angular": "~1.2.16",
+        "jquery": "~2.1.0"
+    }
+}

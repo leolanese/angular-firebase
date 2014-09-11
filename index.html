@@ -1,0 +1,111 @@
+<!doctype html>
+<!--[if lt IE 7]>  <html class="no-js lt-ie9 lt-ie8 lt-ie7 no-svg" lang="en"><![endif]-->
+<!--[if IE 7]>     <html class="no-js lt-ie9 lt-ie8 no-svg" lang="en"><![endif]-->
+<!--[if IE 8]>     <html class="no-js lt-ie9 no-svg" lang="en"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js" lang="en"> <!--<![endif]-->
+
+<!--[if (gte IE 6) & (lte IE 8)]>
+    <script type="text/javascript" src="bower_components/selectivizr/selectivizr.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+    <!-- we don't need the html5Shiv is already included on the Moderniz custom version -->
+<![endif]-->
+
+<html data-ng-app="myTestApp">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!-- Mobile optimisation metas -->
+    <meta name="author" content="Leo Lanese" />
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+
+    <title data-ng-controller="titleCtrl">{{t0}}</title>
+
+    <link rel="stylesheet" href="./app/css/main.css"/>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="./app/css/bs.css">
+    <!-- Latest compiled and minified animations CSS -->
+    <link rel="stylesheet" href="./app/css/animations.css">
+    <link rel="stylesheet" href="./app/css/animate.css">
+
+    <!--
+    01101100 01100101 01101111 01101100 01100001 01101110 01100101 01110011 01100101 00001010
+    -->
+</head>
+
+	<body data-ng-cloak>
+
+        <nav role="navigation" class="nav">
+            <ul class="menu">
+                <li><a data-ng-href="#/view1">View: 1</a></li>
+                <li><a data-ng-href="#/view2">View: 2</a></li>
+                <li><a data-ng-href="#/view3">View: 3</a></li>
+            </ul>
+        </nav>
+
+        <!-- markup -->
+        <div role="main" id="wrapper">
+
+            <div class="typography">
+                <main>
+                    <div data-ng-view></div> <!-- legacy <IE8 support -->
+                </main>
+
+                <noscript>
+                    <!-- Progressive enhancement: no-js -->
+                    <!-- with no javascript wt -->
+
+                    <!-- grid 33% -->
+                    <div class="flex flex-2">
+                        <div class="box">
+                            <h2 >Option 1</h2>
+                            Description
+                            <a data-ng-href="./app/partials/partial2.html" >test</a>
+                        </div>
+                    </div>
+                    <div class="flex flex-2">
+                        <div class="box">
+                            <h2>Option 2</h2>
+                            Description
+                            <a data-ng-href="./app/partials/partial3.html" >test</a>
+                        </div>
+                    </div>
+
+                </noscript>
+
+            </div>
+
+        </div>
+
+        <p data-ng-bind-html-unsafe=(article.content.IntroText)></p><!-- <br> -->
+
+        <!--  using Directives -->
+        <div ng-controller="footerController" ng-class="{color: true}">
+            <!-- depending of "info": Use the scope option to create isolate scopes when making components that you want to reuse throughout your app -->
+            <my-customer info="f1" class="pink"></my-customer>
+            <my-customer info="f2"></my-customer>
+        </div>
+
+        <!-- RequireJS to automatically load routes.js (data-main)  -->
+        <script data-main="app/js/main" src="./bower_components/requirejs/require.js"></script>
+
+        <script>
+            // Use LiveReload on iOS / Safari Mobile, in case your build tool middleware does not inject a tag already.
+            // Ref: http://feedback.livereload.com/knowledgebase/articles/86232-how-do-i-use-livereload-on-iphone-ipad-android-etc
+            // This variant of the script does away with having to hardcode the hostname (and protocol):
+            //$(document).ready(function(){
+            //    $.getScript('//'+location.hostname+':35729/livereload.js');
+            //});
+        </script>
+
+	</body>
+</html>

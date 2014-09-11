@@ -1,0 +1,77 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Jasmine WMS Spec Runner</title>
+    <script type="text/javascript" src="../bower_components/jquery/jquery.js"></script>
+
+    <!-- jasmine stuff -->
+    <link rel="shortcut icon" type="image/png" href="../bower_components/jasmine/images/jasmine_favicon.png">
+    <link rel="stylesheet" type="text/css" href="../bower_components/jasmine/lib/jasmine-core/jasmine.css">
+    <script type="text/javascript" src="../bower_components/jasmine/lib/jasmine-core/jasmine.js"></script>
+    <script type="text/javascript" src="../bower_components/jasmine/lib/jasmine-core/jasmine-html.js"></script>
+
+    <!-- jasmine helpers -->
+    <!-- http://sinonjs.org/docs/ -->
+    <script type="text/javascript" src="../bower_components/sinonjs//sinon.js"></script>
+    <script type="text/javascript" src="../bower_components/jasmine-sinon/lib/jasmine-sinon.js"></script>
+
+    <script type="text/javascript" src="../bower_components/happen/happen.js"></script>
+    <script type="text/javascript" src="../bower_components/namespace/namespace.js"></script>
+
+    <!-- Additional Jasmine grammar to enable alternate BDD approaches. -->
+    <script type="text/javascript" src="lib/helpers/jasmineGrammar.js"></script>
+    <!-- non-invasive way to mock (or simulate) ajax requests throughout your application -->
+    <script type="text/javascript" src="lib/helpers/jquery.mockjax.js"></script>
+    <!-- using old version to avoid conflicts with mockjax -->
+    <script type="text/javascript" src="lib/helpers/jasmine-jquery.js"></script>
+
+    <!-- user agent sniffing -->
+    <script type="text/javascript" src="lib/ua.js"></script>
+
+    <!-- source spec unit-test -->
+    <script type="text/javascript" src="spec/wRunnerSpec.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="/\Css/nav.css">
+    <link rel="stylesheet" type="text/css" href="\Css/home.css">
+    <link rel="stylesheet" type="text/css" href="\Css/accordion.css">
+
+    <!-- source src code files to be tested -->
+    <script type="text/javascript" src="../../js/core.js"></script>
+
+    <!-- Jasmine loader -->
+    <script type="text/javascript">
+        (function() {
+            var jasmineEnv = jasmine.getEnv();
+            jasmineEnv.updateInterval = 1000;
+
+            var htmlReporter = new jasmine.HtmlReporter();
+
+            jasmineEnv.addReporter(htmlReporter);
+
+            jasmineEnv.specFilter = function(spec) {
+                return htmlReporter.specFilter(spec);
+            };
+
+            var currentWindowOnload = window.onload;
+
+            window.onload = function() {
+                if (currentWindowOnload) {
+                    currentWindowOnload();
+                }
+                execJasmine();
+            };
+
+            function execJasmine() {
+                jasmineEnv.execute();
+            }
+
+        })();
+    </script>
+
+</head>
+
+<body>
+</body>
+
+</html>

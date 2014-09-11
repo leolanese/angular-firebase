@@ -1,0 +1,15 @@
+{
+  "name": "happen",
+  "homepage": "https://github.com/tmcw/happen",
+  "version": "0.1.3",
+  "_release": "0.1.3",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.1.3",
+    "commit": "b41eb142638027d23fb3004bbf8d090e6e5a11c9"
+  },
+  "_source": "git://github.com/tmcw/happen.git",
+  "_target": "~0.1.3",
+  "_originalSource": "happen",
+  "_direct": true
+}

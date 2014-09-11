@@ -1,0 +1,123 @@
+@import "_rwd_reset";
+@import "_base";
+
+/* ng-cloak */
+/*
+ prevent the Angular html template from being briefly displayed by the browser in its raw (uncompiled)
+*/
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+
+/*
+  no javascript
+*/
+.flex { background: green; }
+.no-js .flex { background: red }
+
+
+/*
+  mobile first
+*/
+body {
+  background: #e4b477;
+}
+#wrapper {
+  width: 100%;
+  margin: 0 auto;
+  padding: 30px 0;
+  background-color: $c1;
+}
+
+
+/* custom grid */
+.gs {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 2%;
+  margin-bottom: 20px;
+  font-size: 16px; /* older browser */
+  font-size: 1rem;
+}
+
+
+/*
+  fluid design
+*/
+.flex {
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 20px;
+  font-size: 16px; /* legacy browser */
+  font-size: 1rem;
+  border-radius: 10px;
+}
+.flex-1 { width: 23%; }
+.flex-2 { width: 48%; }
+.flex-3 { width: 73%; }
+.flex-4 { width: 98%; }
+
+
+/*
+  footer
+*/
+
+.footer {
+  background: greenyellow;
+}
+
+/*
+  menu
+*/
+.menu li {
+  display: inline-table;
+}
+
+/*
+ nav
+*/
+.nav {
+  background: #b20029;
+}
+
+.box {
+  padding: 10px;
+}
+
+/*
+  Responsive breaking points & Mobile First approach
+*/
+@media all and (min-width: 480px) {
+  body {
+    background: green;
+  }
+}
+
+@media all and (min-width: 768px) {
+  body {
+    background: red;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  body {
+    background: #005a84;
+  }
+}
+
+
+
+/* setting the class using ngClass */
+.title {
+  font-style: italic !important;
+  font-weight: bolder;
+}
+.classvar {
+  background: #bbbbbb;
+}
+
+
+.color {
+  background: indianred;
+}

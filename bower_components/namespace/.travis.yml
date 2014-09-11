@@ -1,0 +1,9 @@
+language: javascript
+notifications:
+  email: false
+before_script:
+    - npm install -g grunt-cli
+    - npm install -g testem
+    - npm install
+script:
+    - grunt testem:ci:headless

@@ -1,0 +1,2 @@
+#!/bin/jsc
+alert('test');

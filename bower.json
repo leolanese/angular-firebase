@@ -1,0 +1,33 @@
+{
+  "name": "angular-base",
+  "version": "0.1",
+  "dependencies": {
+    "angular": "1.2.16",
+    "modernizr": "~2.6.2",
+    "jquery": "~1.10.2",
+    "bootstrap-sass-official": "~3.1.1"
+  },
+  "private": true,
+  "homepage": "https://github.com/sirwilliam/root",
+  "authors": [
+    "sirwilliam <developer@leolanese.com>"
+  ],
+  "description": "@LeoLanese AngularJS stand alone base",
+  "main": "app/index.html",
+  "keywords": [
+    "angular",
+    "stand",
+    "alone"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jasmine-sinon": "~0.3.1"
+  }
+}

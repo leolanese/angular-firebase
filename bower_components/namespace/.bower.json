@@ -1,0 +1,15 @@
+{
+  "name": "namespace",
+  "homepage": "https://github.com/abalanga/namespace",
+  "version": "0.5.3",
+  "_release": "0.5.3",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.5.3",
+    "commit": "f0c6a40b450b7db621f9cb429a17205d6f999c44"
+  },
+  "_source": "git://github.com/abalanga/namespace.git",
+  "_target": "~0.5.3",
+  "_originalSource": "namespace",
+  "_direct": true
+}

@@ -1,0 +1,53 @@
+/* Vendor Dependencies */
+//. @import "compass";
+
+$c1:  #fff;
+$c2: #f1f1f1;
+$c3: #bbb;
+$c4: #333;
+$c5: #222;
+$c6: #000;
+
+$base-color: $c4;
+$base-font-family: 'Roboto', 'helvetica', sans-serif;
+$base-font-size: 1em;
+$base-font-weight: 300;
+
+
+body {
+  color: $base-color;
+  font-size: $base-font-size;
+  font-family: $base-font-family;
+  font-weight: $base-font-weight;
+  line-height: 1.6;
+  width: 100%;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-weight: $base-font-weight;
+  padding: 15px;
+}
+
+.typography {
+  h1 { @extend .h1; margin: 1em 0 .5em; }
+  h2 { @extend .h2; margin: 1em 0 .5em; }
+  h3 { @extend .h3; margin: 1em 0 .5em; }
+  h4 { @extend .h4; margin: 1em 0 .5em; }
+  h5 { @extend .h5; margin: 1em 0 .5em; }
+  h6 { @extend .h6; margin: 1em 0 .5em; }
+}
+
+
+.link {
+  color: $c1;
+  text-decoration: none;
+
+  &:visited {
+    color: $c1;
+  }
+
+  &:hover, &:visited:hover {
+    color: $c1;
+    text-decoration: none;
+  }
+}

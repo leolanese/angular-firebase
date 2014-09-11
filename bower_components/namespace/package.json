@@ -1,0 +1,43 @@
+{
+  "name": "namespace",
+  "description": "JavaScript namespace helper library.",
+  "homepage": "https://github.com/abalanga/namespac",
+  "keywords": [
+    "util",
+    "namespace",
+    "server",
+    "client",
+    "browser"
+  ],
+  "author": "Adam Balanga <adam.balanga@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/abalanga/namespace.git"
+  },
+  "main": "namespace.js",
+  "version": "0.5.3",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-jshint": "~0.4.3",
+    "grunt-contrib-uglify": "~0.2.0",
+    "grunt-contrib-testem": "~0.5.5",
+    "grunt-contrib-clean": "~0.4.1",
+    "grunt-contrib-compress": "~0.5.0",
+    "chai": "~1.8.0",
+    "sinon": "~1.7.3",
+    "sinon-chai": "~2.4.0",
+    "grunt-strip-code": "~0.1.2",
+    "grunt-contrib-copy": "~0.4.1"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://raw.github.com/abalanga/namespace/master/LICENSE"
+    }
+  ],
+  "files": [
+    "namespace.js",
+    "namespace-min.js",
+    "LICENSE"
+  ]
+}
