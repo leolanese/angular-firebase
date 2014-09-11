@@ -15,18 +15,18 @@ capybara-*.html
 **.orig
 rerun.txt
 pickle-email-*.html
-
 /config/environments/production.rb
 /config/*.yml
 /*.log
-
-node_modules
 .tmp
-
 # Ignore sass-cache files.
 *.sass-cache*
-
 .DS_Store
 .idea/**/*
 php/**.*.idea
-
+node_modules
+/node_modules
+/npm-debug.log
+/bower.json
+/component.json
+/bower_components

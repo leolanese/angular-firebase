@@ -1,14 +1,15 @@
-## Angular-base (inspired by angular-seed)
+## Angular-firebase (inspired by angular-base)
 
 # Getting Started
-To get you started you can simply clone the angular-base repository and install the dependencies:
+To get you started you can simply clone the angular-firebase repository and install the dependencies:
 
-# Clone angular-base
-Clone the angular-base repository using:
+# Clone angular-firebase
+Clone the angular-firebase repository using:
 
 ```
-git clone origin https://github.com/sirwilliam/angular-base.git
-cd angular-base
+mkdir angular-firebase
+git clone origin https://github.com/sirwilliam/angular-firebase.git
+cd angular-firebase
 ```
 
 # Install Dependencies
@@ -47,7 +48,7 @@ You should find that you have a new folders in your project.
 # Run the Application
 I have pre-configured the project with a simple development web server.
 - node scripts/web-server.js
-- run http://localhost:8888/angular-base/app/index.html
+- run http://localhost:8888/angular-firebase/app/index.html
 
 
 # How to run the unit-test:
@@ -200,8 +201,8 @@ You can also ask Karma to do a single run of the tests and then exit.
 
 # Thanks:
 <pre>
-Inspired by the angular-seed project (Seed project for angular apps.):
-https://github.com/angular/angular-seed
+Inspired by the angular-base project (Seed project for angular apps.):
+https://github.com/angular/angular-base
 </pre>
 
 
