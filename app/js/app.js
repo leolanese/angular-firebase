@@ -9,7 +9,8 @@ define([
 	'controllers',
 	'angularRoute',
     'angularAnimate',
-    'angularFirebase',
+    'firebase',
+    'angularFire',
     'angularSimpleLogin',
     'ngGrid'
 	],

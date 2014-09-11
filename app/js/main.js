@@ -3,16 +3,18 @@ console.log("-=- loading main.js -=- ");
 require.config({
 
 	paths: {
+		'jquery':               '../../bower_components/jquery/jquery',
+
 		'angular':              '../../bower_components/angular/angular',
 		'angularRoute':         '../../bower_components/angular-route/angular-route',
 		'angularAnimate':       '../../bower_components/angular-animate/angular-animate',
 		'angularMocks':         '../../bower_components/angular-mocks/angular-mocks',
 
-        'angularFirebase':     '../../bower_components/firebase/firebase',
-        'angularSimpleLogin':  '../../bower_components/firebase-simple-login/firebase-simple-login',
+        'firebase':             '../../bower_components/firebase/firebase',
+        'angularFire':          '../../bower_components/angularfire/dist/angularfire',
+        'angularSimpleLogin':   '../../bower_components/firebase-simple-login/firebase-simple-login',
 
-        'ngGrid':               '../../bower_components/ng-grid/ng-grid-2.0.13.debug',
-        'ngGridCss':            '../../bower_components/no-grid/no-grid.css',
+        'ngGrid':               '../../bower_components/ng-grid/ng-grid-2.0.13.min',
 
 		'text':                 '../../bower_components/requirejs-text/text',
         'modernizr' :           '../../bower_components/modernizr/modernizr-custom',
@@ -24,6 +26,7 @@ require.config({
 		'angular' : {'exports' : 'angular'},
 		'angularRoute': ['angular'],
 		'angularAnimate': ['angular'],
+        'angularFire': ['angular'],
 		'angularMocks': {
 			deps:['angular'],
 			'exports':'angular.mock'
@@ -41,7 +44,11 @@ require( [
 	'routes',
     'angularAnimate',
     'modernizr',
-    'fonts'
+    'fonts',
+    'firebase',
+    'angularFire',
+    'angularSimpleLogin'
+
 ], function(angular, app, routes) {
 	'use strict';
 
@@ -50,4 +57,5 @@ require( [
 	angular.element().ready(function() {
 		angular.resumeBootstrap([app['name']]);
 	});
+
 });

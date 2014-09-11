@@ -2,10 +2,8 @@ define(['angular', 'services'], function (angular) {
 	'use strict';
 
 	/* Controllers */
-    var fb = new Firebase('https://examplisimo.firebaseio.com/');
 
-
-    return angular.module('myTestApp.controllers', ['myTestApp.services'])
+    return angular.module('myTestApp.controllers', ['myTestApp.services', 'firebase'])
 
         /*
          The longhand version protects from minification because the angular
@@ -131,6 +129,10 @@ define(['angular', 'services'], function (angular) {
 
         // controling the angularfire
         .controller('ctrl', function($firebase, $scope, orderByPriorityFilter) {
+
+            var fb = new Firebase('https://examplisimo.firebaseio.com/');
+
+
             $scope.data = $firebase(fb);
             $scope.myData = $firebase(fb);
             $scope.$watchCollection('data', function() {
