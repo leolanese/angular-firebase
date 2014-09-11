@@ -1,4 +1,4 @@
-console.log("loading main.js");
+console.log("-=- loading main.js -=- ");
 
 require.config({
 
@@ -11,7 +11,8 @@ require.config({
         'angularFirebase':     '../../bower_components/firebase/firebase',
         'angularSimpleLogin':  '../../bower_components/firebase-simple-login/firebase-simple-login',
 
-        'ngGrid':               '../../bower_components/angular-mocks/angular-mocks',
+        'ngGrid':               '../../bower_components/ng-grid/ng-grid-2.0.13.debug',
+        'ngGridCss':            '../../bower_components/no-grid/no-grid.css',
 
 		'text':                 '../../bower_components/requirejs-text/text',
         'modernizr' :           '../../bower_components/modernizr/modernizr-custom',

@@ -1,5 +1,5 @@
 // associate the Module the file location/path on the require.config() on main.js
-console.log("loading app.js");
+console.log("-=- loading app.js -=- ");
 
 define([
 	'angular',
@@ -9,7 +9,8 @@ define([
 	'controllers',
 	'angularRoute',
     'angularAnimate',
-    'firebase',
+    'angularFirebase',
+    'angularSimpleLogin',
     'ngGrid'
 	],
 
