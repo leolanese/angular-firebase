@@ -40,6 +40,9 @@ casperjs --version;
 bower version;
 ```
 
+# if you found any problem:
+npm update -g bower
+
 You should find that you have a new folders in your project.
 
 * `node_modules` - contains the npm packages for the tools we need npm run test-single-run
@@ -68,11 +71,11 @@ You can also ask Karma to do a single run of the tests and then exit.
 - npm run test-single-run
 
 
-
 # Skills  I have used (the usual suspects):
     ├── javascript
     ├── HTML5
     └── CSS3
+
 
 # Progressive enhancement path
     ├── using <html> father with: no-js, lt-ie9, lt-ie8, lt-ie7 and no-svg
@@ -80,15 +83,18 @@ You can also ask Karma to do a single run of the tests and then exit.
     ├── html5shiv.js polyfill
     ├── respond.js
     ├── feature detection framework modernizr.js
-    └── including fallbacks for legacy browsers and all vendor using compass mixins
+    └── including fallbacks for legacy browsers and all vendor using compass Mixins
+
 
 # Tools I have used:
-# AngularJS
+
+# AngularJS Services
     ├── filters
     ├── services
     ├── directives
     ├── controllers
-    └── angularRoute
+    ├── angularRoute
+    └── angularfire
 
 # node.js
     ├── grunt
@@ -137,25 +143,28 @@ You can also ask Karma to do a single run of the tests and then exit.
 
 
 # Bower.js
-    ├─┬ angular-mocks#1.2.16 extraneous (1.2.17-build.223+sha.d18d5f5 available, latest is 1.3.0-build.2792+sha.0dc35ef)
-    │ └── angular#1.2.16 (latest is 1.3.0-build.2792+sha.0dc35ef)
-    ├─┬ angular-route#1.2.16 extraneous (1.2.17-build.223+sha.d18d5f5 available, latest is 1.3.0-build.2792+sha.0dc35ef)
-    │ └── angular#1.2.16
-    ├─┬ angular-scenario#1.2.16 extraneous (1.2.17-build.223+sha.d18d5f5 available, latest is 1.3.0-build.2792+sha.0dc35ef)
-    │ └── angular#1.2.16
-    ├─┬ bootstrap#3.1.1 extraneous
-    │ └── jquery#1.10.2 (2.1.1 available)
-    ├── bootstrap-sass-official#3.1.1+2 extraneous
+    angular-base#0.1 /Users/Leo/Documents/root/angular-firebase
+    ├── angular#1.2.20 incompatible with 1.2.16 (1.2.16 available, latest is 1.3.0-rc.1)
+    ├─┬ angular-animate#1.2.9 extraneous (latest is 1.3.0-rc.1)
+    │ └── angular#1.2.20 incompatible with 1.2.9 (1.2.9 available, latest is 1.3.0-rc.1)
+    ├─┬ angular-mocks#1.2.20 extraneous (1.2.25-build.449+sha.1a53863 available, latest is 1.3.0-rc.1)
+    │ └── angular#1.2.20 (latest is 1.3.0-rc.1)
+    ├─┬ angular-route#1.2.20 extraneous (1.2.25-build.449+sha.1a53863 available, latest is 1.3.0-rc.1)
+    │ └── angular#1.2.20
+    ├─┬ angular-scenario#1.2.20 extraneous (1.2.25-build.449+sha.1a53863 available, latest is 1.3.0-rc.1)
+    │ └── angular#1.2.20
+    ├── bootstrap-sass-official#3.1.1+2 (latest is 3.2.0+2)
+    ├── firebase#1.0.21 extraneous
     ├── happen#0.1.3 extraneous
-    ├── jasmine#1.3.1 extraneous (latest is 2.0.0)
-    ├─┬ jasmine-sinon#0.3.1 (0.3.2 available, latest is 0.4.0)
-    │ ├── jasmine#1.3.1 (latest is 2.0.0)
-    │ └── sinonjs#1.7.3 (latest is 1.9.1)
+    ├── jasmine#1.3.1 extraneous (latest is 2.0.4)
+    ├─┬ jasmine-sinon#0.3.2 (latest is 0.4.0)
+    │ ├── jasmine#1.3.1 (latest is 2.0.4)
+    │ └── sinonjs#1.10.2
     ├── jquery#1.10.2 (latest is 2.1.1)
-    ├── modernizr#2.6.3 (latest is 2.8.2)
+    ├── modernizr#2.6.3 (latest is 2.8.3)
     ├── namespace#0.5.3 extraneous
     ├── normalize-css#3.0.1 extraneous
-    ├── requirejs#2.1.11 extraneous (2.1.13 available)
+    ├── requirejs#2.1.14 extraneous (2.1.15 available)
     ├── requirejs-text#2.0.12 extraneous
     └── selectivizr#1.0.2 extraneous
 
