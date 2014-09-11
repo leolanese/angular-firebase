@@ -96,6 +96,12 @@ You can also ask Karma to do a single run of the tests and then exit.
     ├── angularRoute
     └── angularfire
 
+# angularfire#0.8.2 bower_components/angularfire
+    ├── angular#1.2.20
+    ├── firebase#1.0.21
+    ├── firebase-simple-login#1.6.3
+    └── mockfirebase#0.2.9
+
 # node.js
     ├── grunt
     ├── compass

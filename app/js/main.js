@@ -3,14 +3,20 @@ console.log("loading main.js");
 require.config({
 
 	paths: {
-		'angular':        '../../bower_components/angular/angular',
-		'angularRoute':   '../../bower_components/angular-route/angular-route',
-		'angularAnimate': '../../bower_components/angular-animate/angular-animate',
-		'angularMocks':   '../../bower_components/angular-mocks/angular-mocks',
+		'angular':              '../../bower_components/angular/angular',
+		'angularRoute':         '../../bower_components/angular-route/angular-route',
+		'angularAnimate':       '../../bower_components/angular-animate/angular-animate',
+		'angularMocks':         '../../bower_components/angular-mocks/angular-mocks',
 
-		'text':           '../../bower_components/requirejs-text/text',
-        'modernizr' :     '../../bower_components/modernizr/modernizr-custom',
-        'fonts' :         '//ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont'
+        'angularFirebase':     '../../bower_components/firebase/firebase',
+        'angularSimpleLogin':  '../../bower_components/firebase-simple-login/firebase-simple-login',
+
+        'ngGrid':               '../../bower_components/angular-mocks/angular-mocks',
+
+		'text':                 '../../bower_components/requirejs-text/text',
+        'modernizr' :           '../../bower_components/modernizr/modernizr-custom',
+
+        'fonts' :               '//ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont'
 	},
 
 	shim: {

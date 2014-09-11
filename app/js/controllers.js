@@ -2,6 +2,7 @@ define(['angular', 'services'], function (angular) {
 	'use strict';
 
 	/* Controllers */
+    var fb = new Firebase('https://examplisimo.firebaseio.com/');
 
 
     return angular.module('myTestApp.controllers', ['myTestApp.services'])
@@ -127,6 +128,16 @@ define(['angular', 'services'], function (angular) {
 
             $scope.f2 = { n1: 'xxxx', a1: 'XXXXX' };
         }])
+
+        // controling the angularfire
+        .controller('ctrl', function($firebase, $scope, orderByPriorityFilter) {
+            $scope.data = $firebase(fb);
+            $scope.myData = $firebase(fb);
+            $scope.$watchCollection('data', function() {
+                $scope.myData = orderByPriorityFilter($scope.data);
+            });
+            $scope.gridOptions = { data: 'myData' };
+        });
 
 
 });

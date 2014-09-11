@@ -8,14 +8,15 @@ define([
 	'directives',
 	'controllers',
 	'angularRoute',
-    'angularAnimate'
+    'angularAnimate',
+    'firebase',
+    'ngGrid'
 	],
 
     function (angular, filters, services, directives, controllers) {
 		'use strict';
 
-		// Declare app level module which depends on filters, and services
-		
+		// Start/Declare app level module which depends on filters, and services
 		return angular.module('myTestApp', [
 			'ngRoute',
             'ngAnimate',
