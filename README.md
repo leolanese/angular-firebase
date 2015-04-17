@@ -240,4 +240,4 @@ https://github.com/angular/angular-base
 <a href="http://twitter.com/LeoLaneseltd" target="_blank">http://twitter.com/LeoLaneseltd</a><br>
 
 # Questions / Suggestion?<br>
-<a href="mail:to">javscript@leolanese.com</a><br>
+<a href="mail:to">angularjs@leolanese.com</a><br>
