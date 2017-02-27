@@ -1,4 +1,4 @@
-## Angular-firebase (inspired by angular-base)
+## Angular-firebase
 
 # Getting Started
 To get you started you can simply clone the angular-firebase repository and install the dependencies:
